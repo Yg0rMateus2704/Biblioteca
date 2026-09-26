@@ -1,0 +1,25 @@
+public abstract class Usuario{
+
+    private final Strig matricula;
+    private final Strig nome;
+    private final Strig email;
+    private final ItemAcervo[] intensEmprestados;
+    private int quantidadeEmprestado;
+    private double multaAcumulada;
+
+    private static int totalUsuarioCriados = 0;
+
+    protected Usuario(String matricula, String nome, String email){
+        this.matricula = matricula;
+        this.nome = nome;
+        this.email = email;
+        this.intensEmprestados = new ItemAcervo[10];
+        this.quantidadeEmprestado = 0;
+        this.multaAcumulada = 0;
+        totalUsuarioCriados++;
+    }
+
+    public abstract int getLimiteEmprestimo(){}
+    public abstract double getPercentualDesconto();
+
+}
