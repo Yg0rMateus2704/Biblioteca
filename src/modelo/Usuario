@@ -19,7 +19,9 @@ public abstract class Usuario{
         totalUsuarioCriados++;
     }
 
-    public abstract int getLimiteEmprestimo(){}
+    public abstract int getLimiteEmprestimo(){
+        return 0;
+    }
     public abstract double getPercentualDesconto();
 
 }
