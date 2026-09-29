@@ -79,6 +79,8 @@ public class Biblioteca{
         return false;
     }
 
+    public double processarDevolucao(String codigoItem, Usuario usuario, int diasAtraso)
+
 
 
     
