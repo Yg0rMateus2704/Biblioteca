@@ -1,8 +1,10 @@
+package modelo;
+
 public abstract class Usuario{
 
-    private final Strig matricula;
-    private final Strig nome;
-    private final Strig email;
+    private final String matricula;
+    private final String nome;
+    private final String email;
     private final ItemAcervo[] intensEmprestados;
     private int quantidadeEmprestado;
     private double multaAcumulada;
@@ -21,11 +23,11 @@ public abstract class Usuario{
 
     public abstract int getLimiteEmprestimo();
     public abstract double getPercentualDesconto();
-    public abstract Strig getCategoria();
+    public abstract String getCategoria();
 
     public double aplicarDesconto( double multaAcumulada){
         if(multaAcumulada < 0){
-            throw new IllegalArgumentException("A multa não pode ser menor que zero!")
+            throw new IllegalArgumentException("A multa não pode ser menor que zero!");
         }
 
         return  multaAcumulada * getPercentualDesconto();
@@ -40,7 +42,7 @@ public abstract class Usuario{
 
         for(int i = 0; i < quantidadeEmprestado; i++){
             if(intensEmprestados[i].equals(item)){
-                for(int j = i; quantidadeEmprestado - 1; j++){
+                for(int j = i; j <  quantidadeEmprestado - 1; j++){
                     itensEmprestados[j] = intensEmprestados[j + 1];
                 }
 
@@ -51,7 +53,7 @@ public abstract class Usuario{
 
         }
 
-        return false;
+        return;
      }
 
 }

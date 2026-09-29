@@ -1,4 +1,5 @@
-import contratos.Config;
+import modelo.Config;
+package modelo;
 
 public abstract class ItemAcervo{
 
@@ -8,7 +9,7 @@ public abstract class ItemAcervo{
     private boolean disponivel;
     private static int totalItensCriados = 0;
 
-    protected ItemAcervo(Strig codigo, String titulo, int ano){
+    protected ItemAcervo(String codigo, String titulo, int ano){
 
         if(codigo == null || codigo.isBlank()){
             throw new IllegalArgumentException("Código Invaido");

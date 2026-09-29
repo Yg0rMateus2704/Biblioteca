@@ -1,3 +1,11 @@
+import modelo.Config;
+package modelo;
+import contratos.Emprestavel;
+import contratos.Reservavel;
+import modelo.Usuario;
+import modelo.ItemAcervo;
+
+
 public abstract class ItemEmprestavel extends ItemAcervo implements Emprestavel{
  
     private Usuario usuarioAtual;

@@ -1,4 +1,6 @@
+package modelo;
 import contratos.Reservavel;
+import contratos.Emprestavel;
 
 public class Livro extends Emprestavel implements Reservavel{
     

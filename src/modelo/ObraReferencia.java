@@ -1,3 +1,7 @@
+import modelo.ItemAcervo;
+package modelo;
+
+
 public class ObraReferencia extends ItemAcervo{
 
     private final Sring tipoObra;
