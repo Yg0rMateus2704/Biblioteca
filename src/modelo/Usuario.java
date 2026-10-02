@@ -38,7 +38,7 @@ public abstract class Usuario{
         quantidadeEmprestado++;
     }
 
-     public boolean registrarDevolucao(ItemAcervo item){
+    public boolean registrarDevolucao(ItemAcervo item){
 
         for(int i = 0; i < quantidadeEmprestado; i++){
             if(intensEmprestados[i].equals(item)){
@@ -53,7 +53,7 @@ public abstract class Usuario{
 
         }
 
-        return;
-     }
+        return false;
+    }
 
 }

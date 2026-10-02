@@ -1,3 +1,4 @@
+package contratos;
 
 
 public interface Config{
